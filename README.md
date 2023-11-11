@@ -54,3 +54,6 @@ Reporting and Corrections:
 ```
 Generating a report on identified inconsistencies or issues within the code, followed by corrections to bring the code in line with the standards.
 ```
+### License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
