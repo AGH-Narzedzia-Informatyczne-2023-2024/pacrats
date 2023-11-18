@@ -16,7 +16,7 @@ We use manual tests that involve, testing functionality, user interface (UI) tes
 ### End to end tests
 Testing functionality:
 ```
-a. Gameplay Testing: Checking smoothness, response to player interactions, character behavior accuracy, and overall gameplay.
+//a. Gameplay Testing: Checking smoothness, response to player interactions, character behavior accuracy, and overall gameplay.
 b. Game Levels Testing: Ensuring all levels are accessible, free of level-specific errors, and that objectives are clear.
 c. Mission and Task Testing: Verifying if tasks and missions display correctly and can be completed without issues.
 ```
