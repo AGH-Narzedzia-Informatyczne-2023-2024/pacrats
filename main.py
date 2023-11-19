@@ -10,19 +10,16 @@ dt = 0
 player_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
 player_velocity = pygame.Vector2(0, 0)
 gravity = pygame.Vector2(0, 500)  # Adjust gravity strength as needed
-
+friction_coefficient = 0.8  # Adjust friction strength as needed
 
 background = pygame.image.load('./images/fajne.jpg')
 background = pygame.transform.scale(background, (612, 459))
 
 while running:
-    # poll for events
-    # pygame.QUIT event means the user clicked X to close your window
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-    # fill the screen with a color to wipe away anything from the last frame
     screen.blit(background, (0, 0))
 
     # Apply gravity
@@ -38,6 +35,10 @@ while running:
     if keys[pygame.K_RIGHT]:
         player_velocity.x = 300
 
+    # Apply friction on the x-axis
+    friction_force = -player_velocity.x * friction_coefficient
+    player_velocity.x += friction_force * dt
+
     # Update player position based on velocity
     player_pos += player_velocity * dt
 
@@ -47,11 +48,8 @@ while running:
 
     pygame.draw.circle(screen, "red", (int(player_pos.x), int(player_pos.y)), 40)
 
-    # flip() the display to put your work on the screen
     pygame.display.flip()
 
-    # limit FPS to 60
-    # dt is delta time in seconds since the last frame, used for framerate-independent physics.
     dt = clock.tick(60) / 1000
 
 pygame.quit()
