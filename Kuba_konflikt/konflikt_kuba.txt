@@ -1,2 +1,5 @@
+
 zawartosc ktora jest ok
 to jednak ta wiadomosc powoduje konflikt
+ta zawartosc spowoduje konflikt :c
+
