@@ -1,2 +1,3 @@
 tworzenie konfliktu w main
 edycja pliku w main
+dodanie zawartosci w innej galezi
