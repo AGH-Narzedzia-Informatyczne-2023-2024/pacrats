@@ -1,2 +1,3 @@
 tworzenie konfliktu
 dodane
+zmiana z nowego branch
