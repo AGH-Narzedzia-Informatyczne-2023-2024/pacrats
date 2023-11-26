@@ -1,1 +1,2 @@
 zawartosc ktora jest ok
+to jednak ta wiadomosc powoduje konflikt
