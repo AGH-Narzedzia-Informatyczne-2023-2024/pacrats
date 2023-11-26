@@ -1,1 +1,1 @@
-tworzenie konfliktu w main
+dodanie zawartosci w innej galezi
