@@ -1,1 +1,2 @@
 tworzenie konfliktu w main
+edycja pliku w main
